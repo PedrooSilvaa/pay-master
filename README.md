@@ -1,8 +1,8 @@
 # Sistema de Pagamento Automático
 
-Este é um projeto simples de um sistema de pagamento automático utilizando Spring Boot e um agendador (scheduler) para executar os pagamentos em horários definidos. 
+Este é um projeto simples de um sistema de pagamento automático utilizando Spring Boot e um agendador (scheduler) para executar os pagamentos em horários definidos.
 
-## Funcionalidades 
+## Funcionalidades
 
 - **Agendamento de Pagamentos**: Processa pagamentos automaticamente em horários configurados.
 - **Spring Boot**: Utiliza o framework Spring Boot para facilitar o desenvolvimento.
