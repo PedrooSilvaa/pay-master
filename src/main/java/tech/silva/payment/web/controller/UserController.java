@@ -10,6 +10,8 @@ import tech.silva.payment.service.UserService;
 import tech.silva.payment.web.dto.UserCreateDto;
 import tech.silva.payment.web.dto.UserResponseDto;
 
+import java.util.List;
+
 @RestController
 @RequestMapping("/api/v1/users")
 @RequiredArgsConstructor
@@ -32,5 +34,9 @@ public class UserController {
         return ResponseEntity.ok(UserResponseDto.toUserResponse(user));
     }
 
-
+    @GetMapping
+    public ResponseEntity<List<UserResponseDto>> getAll(){
+        List<User> users = userService.listAll();
+        return ResponseEntity.ok(UserResponseDto.toListUserResponse(users));
+    }
 }

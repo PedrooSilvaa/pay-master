@@ -7,6 +7,8 @@ import org.springframework.transaction.annotation.Transactional;
 import tech.silva.payment.entity.User;
 import tech.silva.payment.repository.IUserRepository;
 
+import java.util.List;
+
 @Service
 @RequiredArgsConstructor
 public class UserService {
@@ -27,4 +29,7 @@ public class UserService {
         return userRepository.findById(id).orElse(null);
     }
 
+    public List<User> listAll() {
+        return userRepository.findAll();
+    }
 }
