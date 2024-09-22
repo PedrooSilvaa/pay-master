@@ -20,6 +20,6 @@ public class User {
     @Column(unique = true)
     private String cpf;
 
-    private float value;
+    private float value = 0.0f;
 
 }
