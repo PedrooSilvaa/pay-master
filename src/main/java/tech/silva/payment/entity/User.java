@@ -21,4 +21,5 @@ public class User {
     private String cpf;
 
     private float value;
+
 }
